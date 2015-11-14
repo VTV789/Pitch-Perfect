@@ -29,12 +29,12 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HV4-8y-vaa"/>
                             <constraint firstItem="W2o-hf-Oag" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="TPc-Cf-dEU"/>
