@@ -31,7 +31,18 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="163" y="381" width="75" height="23"/>
+                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNr-Y5-1tH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StopButton"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="499" width="50" height="50"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,30 +50,29 @@
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HV4-8y-vaa"/>
                             <constraint firstItem="W2o-hf-Oag" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="TPc-Cf-dEU"/>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKy-SR-CXQ"/>
-                            <constraint firstItem="W2o-hf-Oag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wn7-i9-wAD"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="htU-Bn-fiA"/>
                                 <exclude reference="W2o-hf-Oag"/>
+                                <exclude reference="TNr-Y5-1tH"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="HV4-8y-vaa"/>
                                 <exclude reference="gKy-SR-CXQ"/>
                                 <exclude reference="TPc-Cf-dEU"/>
-                                <exclude reference="wn7-i9-wAD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="htU-Bn-fiA"/>
                                 <include reference="W2o-hf-Oag"/>
+                                <include reference="TNr-Y5-1tH"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="HV4-8y-vaa"/>
                                 <include reference="gKy-SR-CXQ"/>
                                 <include reference="TPc-Cf-dEU"/>
-                                <include reference="wn7-i9-wAD"/>
                             </mask>
                         </variation>
                     </view>
@@ -76,5 +86,6 @@
     </scenes>
     <resources>
         <image name="Mic" width="100" height="100"/>
+        <image name="StopButton" width="50" height="50"/>
     </resources>
 </document>
