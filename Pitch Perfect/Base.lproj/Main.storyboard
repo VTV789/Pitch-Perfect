@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htU-Bn-fiA">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="Mic"/>
-                                <connections>
-                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9z-fb-XI1"/>
-                                </connections>
-                            </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-hf-Oag">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
@@ -37,6 +29,14 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="StopButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htU-Bn-fiA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="Mic"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9z-fb-XI1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -51,9 +51,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="htU-Bn-fiA"/>
                                 <exclude reference="W2o-hf-Oag"/>
                                 <exclude reference="TNr-Y5-1tH"/>
+                                <exclude reference="htU-Bn-fiA"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="HV4-8y-vaa"/>
@@ -66,9 +66,9 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="htU-Bn-fiA"/>
                                 <include reference="W2o-hf-Oag"/>
                                 <include reference="TNr-Y5-1tH"/>
+                                <include reference="htU-Bn-fiA"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="HV4-8y-vaa"/>
@@ -81,6 +81,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="htU-Bn-fiA" id="4wr-Fn-euS"/>
                         <outlet property="recordingInProgress" destination="W2o-hf-Oag" id="vQg-n5-lAn"/>
                         <outlet property="stopAudio" destination="TNr-Y5-1tH" id="uPq-lr-bfm"/>
                     </connections>
