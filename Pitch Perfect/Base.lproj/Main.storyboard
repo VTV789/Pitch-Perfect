@@ -109,22 +109,34 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-oL-WPW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="127" width="46" height="30"/>
-                                </variation>
+                                <state key="normal" backgroundImage="Slow"/>
+                                <connections>
+                                    <action selector="slowAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="o0Y-G9-xNB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CUF-oL-WPW" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="56" id="sxq-PX-3bs"/>
+                            <constraint firstItem="CUF-oL-WPW" firstAttribute="leading" secondItem="ULK-iF-kmR" secondAttribute="leadingMargin" constant="47" id="tXY-rX-JvD"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="CUF-oL-WPW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="sxq-PX-3bs"/>
+                                <exclude reference="tXY-rX-JvD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="CUF-oL-WPW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="sxq-PX-3bs"/>
+                                <include reference="tXY-rX-JvD"/>
                             </mask>
                         </variation>
                     </view>
@@ -155,6 +167,7 @@
     </scenes>
     <resources>
         <image name="Mic" width="100" height="100"/>
+        <image name="Slow" width="100" height="100"/>
         <image name="StopButton" width="50" height="50"/>
     </resources>
 </document>
