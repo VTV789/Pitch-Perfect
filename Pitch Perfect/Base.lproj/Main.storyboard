@@ -105,8 +105,28 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ULK-iF-kmR">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-oL-WPW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="127" width="46" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CUF-oL-WPW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CUF-oL-WPW"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lna-PG-WNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,6 +151,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Er1-lB-d10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="217.5" y="383"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M5p-3N-GdN">
+            <objects>
+                <viewController id="KLg-gQ-Mgt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AJq-tv-Dmt"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Wm-nv-rAd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Srl-jB-6MN">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJI-co-SUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
