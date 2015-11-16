@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -39,9 +40,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="StopButton"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="175" y="499" width="50" height="50"/>
-                                </variation>
                             </button>
                         </subviews>
                         <animations/>
@@ -49,7 +47,9 @@
                         <constraints>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HV4-8y-vaa"/>
                             <constraint firstItem="W2o-hf-Oag" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="TPc-Cf-dEU"/>
+                            <constraint firstItem="TNr-Y5-1tH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="155" id="eav-0e-znQ"/>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKy-SR-CXQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TNr-Y5-1tH" secondAttribute="bottom" constant="51" id="sfI-YN-Fhc"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -61,6 +61,8 @@
                                 <exclude reference="HV4-8y-vaa"/>
                                 <exclude reference="gKy-SR-CXQ"/>
                                 <exclude reference="TPc-Cf-dEU"/>
+                                <exclude reference="eav-0e-znQ"/>
+                                <exclude reference="sfI-YN-Fhc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -73,6 +75,8 @@
                                 <include reference="HV4-8y-vaa"/>
                                 <include reference="gKy-SR-CXQ"/>
                                 <include reference="TPc-Cf-dEU"/>
+                                <include reference="eav-0e-znQ"/>
+                                <include reference="sfI-YN-Fhc"/>
                             </mask>
                         </variation>
                     </view>
