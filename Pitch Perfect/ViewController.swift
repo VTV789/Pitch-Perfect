@@ -31,5 +31,8 @@ class ViewController: UIViewController {
         print("in recordAudio")
     }
 
+    @IBAction func stopAudio(sender: UIButton) {
+    }
+    
 }
 
