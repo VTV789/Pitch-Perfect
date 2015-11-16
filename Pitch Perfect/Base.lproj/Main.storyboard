@@ -26,16 +26,6 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9z-fb-XI1"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-hf-Oag">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="163" y="381" width="75" height="23"/>
-                                </variation>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNr-Y5-1tH">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -44,26 +34,35 @@
                                     <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzA-kf-O0l"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-hf-Oag">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HV4-8y-vaa"/>
-                            <constraint firstItem="W2o-hf-Oag" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="TPc-Cf-dEU"/>
+                            <constraint firstItem="W2o-hf-Oag" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="KMz-HL-Ocg"/>
                             <constraint firstItem="TNr-Y5-1tH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="155" id="eav-0e-znQ"/>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKy-SR-CXQ"/>
+                            <constraint firstItem="W2o-hf-Oag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4W-e2-a0K"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TNr-Y5-1tH" secondAttribute="bottom" constant="51" id="sfI-YN-Fhc"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="htU-Bn-fiA"/>
-                                <exclude reference="W2o-hf-Oag"/>
                                 <exclude reference="TNr-Y5-1tH"/>
+                                <exclude reference="W2o-hf-Oag"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="HV4-8y-vaa"/>
                                 <exclude reference="gKy-SR-CXQ"/>
-                                <exclude reference="TPc-Cf-dEU"/>
+                                <exclude reference="KMz-HL-Ocg"/>
+                                <exclude reference="h4W-e2-a0K"/>
                                 <exclude reference="eav-0e-znQ"/>
                                 <exclude reference="sfI-YN-Fhc"/>
                             </mask>
@@ -71,13 +70,14 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="htU-Bn-fiA"/>
-                                <include reference="W2o-hf-Oag"/>
                                 <include reference="TNr-Y5-1tH"/>
+                                <include reference="W2o-hf-Oag"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="HV4-8y-vaa"/>
                                 <include reference="gKy-SR-CXQ"/>
-                                <include reference="TPc-Cf-dEU"/>
+                                <include reference="KMz-HL-Ocg"/>
+                                <include reference="h4W-e2-a0K"/>
                                 <include reference="eav-0e-znQ"/>
                                 <include reference="sfI-YN-Fhc"/>
                             </mask>
