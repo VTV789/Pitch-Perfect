@@ -119,16 +119,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-ql-qa2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="245" y="155" width="46" height="30"/>
+                                <state key="normal" backgroundImage="Fast"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="218" y="120" width="100" height="100"/>
                                 </variation>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CUF-oL-WPW" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="56" id="sxq-PX-3bs"/>
+                            <constraint firstItem="VDh-ql-qa2" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="47" id="Kg1-Aj-G75"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VDh-ql-qa2" secondAttribute="trailing" constant="47" id="s4e-Bp-8RM"/>
+                            <constraint firstItem="CUF-oL-WPW" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="47" id="sxq-PX-3bs"/>
                             <constraint firstItem="CUF-oL-WPW" firstAttribute="leading" secondItem="ULK-iF-kmR" secondAttribute="leadingMargin" constant="47" id="tXY-rX-JvD"/>
                         </constraints>
                         <variation key="default">
@@ -139,6 +141,8 @@
                             <mask key="constraints">
                                 <exclude reference="sxq-PX-3bs"/>
                                 <exclude reference="tXY-rX-JvD"/>
+                                <exclude reference="Kg1-Aj-G75"/>
+                                <exclude reference="s4e-Bp-8RM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -149,6 +153,8 @@
                             <mask key="constraints">
                                 <include reference="sxq-PX-3bs"/>
                                 <include reference="tXY-rX-JvD"/>
+                                <include reference="Kg1-Aj-G75"/>
+                                <include reference="s4e-Bp-8RM"/>
                             </mask>
                         </variation>
                     </view>
@@ -178,6 +184,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="100" height="100"/>
         <image name="Mic" width="100" height="100"/>
         <image name="Slow" width="100" height="100"/>
         <image name="StopButton" width="50" height="50"/>
