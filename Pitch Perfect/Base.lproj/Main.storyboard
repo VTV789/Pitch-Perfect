@@ -116,15 +116,6 @@
                                     <action selector="playSlowAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="GTv-jq-Xcp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-xl-fKM">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="StopAudio "/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <rect key="frame" x="175" y="486" width="50" height="50"/>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-ql-qa2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -133,45 +124,56 @@
                                     <action selector="playFastAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="Eu3-aw-Q3b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-xl-fKM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="StopAudio "/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                </variation>
+                                <connections>
+                                    <action selector="StopAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="kpD-3R-KDy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lsC-b8-WZW" firstAttribute="top" secondItem="gCb-xl-fKM" secondAttribute="bottom" constant="81" id="5UW-U5-Ecw"/>
                             <constraint firstItem="VDh-ql-qa2" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="47" id="Kg1-Aj-G75"/>
-                            <constraint firstItem="gCb-xl-fKM" firstAttribute="leading" secondItem="ULK-iF-kmR" secondAttribute="leadingMargin" constant="130" id="lKH-zB-k61"/>
-                            <constraint firstItem="lsC-b8-WZW" firstAttribute="top" secondItem="gCb-xl-fKM" secondAttribute="bottom" constant="39" id="o2v-0L-oGl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VDh-ql-qa2" secondAttribute="trailing" constant="47" id="s4e-Bp-8RM"/>
                             <constraint firstItem="CUF-oL-WPW" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="47" id="sxq-PX-3bs"/>
                             <constraint firstItem="CUF-oL-WPW" firstAttribute="leading" secondItem="ULK-iF-kmR" secondAttribute="leadingMargin" constant="47" id="tXY-rX-JvD"/>
+                            <constraint firstItem="gCb-xl-fKM" firstAttribute="leading" secondItem="ULK-iF-kmR" secondAttribute="leadingMargin" constant="155" id="xJd-jx-g55"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="CUF-oL-WPW"/>
-                                <exclude reference="gCb-xl-fKM"/>
                                 <exclude reference="VDh-ql-qa2"/>
+                                <exclude reference="gCb-xl-fKM"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="sxq-PX-3bs"/>
                                 <exclude reference="tXY-rX-JvD"/>
                                 <exclude reference="Kg1-Aj-G75"/>
                                 <exclude reference="s4e-Bp-8RM"/>
-                                <exclude reference="lKH-zB-k61"/>
-                                <exclude reference="o2v-0L-oGl"/>
+                                <exclude reference="xJd-jx-g55"/>
+                                <exclude reference="5UW-U5-Ecw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="CUF-oL-WPW"/>
-                                <include reference="gCb-xl-fKM"/>
                                 <include reference="VDh-ql-qa2"/>
+                                <include reference="gCb-xl-fKM"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="sxq-PX-3bs"/>
                                 <include reference="tXY-rX-JvD"/>
                                 <include reference="Kg1-Aj-G75"/>
                                 <include reference="s4e-Bp-8RM"/>
-                                <include reference="lKH-zB-k61"/>
-                                <include reference="o2v-0L-oGl"/>
+                                <include reference="xJd-jx-g55"/>
+                                <include reference="5UW-U5-Ecw"/>
                             </mask>
                         </variation>
                     </view>
