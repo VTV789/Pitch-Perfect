@@ -123,6 +123,9 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="218" y="120" width="100" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="Eu3-aw-Q3b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
