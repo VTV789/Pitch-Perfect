@@ -116,6 +116,14 @@
                                     <action selector="playSlowAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="GTv-jq-Xcp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-ql-qa2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="245" y="155" width="46" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,6 +134,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="CUF-oL-WPW"/>
+                                <exclude reference="VDh-ql-qa2"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="sxq-PX-3bs"/>
@@ -135,6 +144,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="CUF-oL-WPW"/>
+                                <include reference="VDh-ql-qa2"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="sxq-PX-3bs"/>
