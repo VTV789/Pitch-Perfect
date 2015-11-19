@@ -108,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-oL-WPW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-oL-WPW" userLabel="Slow">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="Slow"/>
@@ -116,7 +116,7 @@
                                     <action selector="playSlowAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="GTv-jq-Xcp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-ql-qa2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-ql-qa2" userLabel="Fast">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="Fast"/>
@@ -124,7 +124,7 @@
                                     <action selector="playFastAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="Eu3-aw-Q3b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-xl-fKM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-xl-fKM" userLabel="Stop">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="StopAudio "/>
@@ -137,7 +137,7 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.45423005760000001" blue="0.14129317429999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lsC-b8-WZW" firstAttribute="top" secondItem="gCb-xl-fKM" secondAttribute="bottom" constant="81" id="5UW-U5-Ecw"/>
                             <constraint firstItem="VDh-ql-qa2" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="47" id="Kg1-Aj-G75"/>
@@ -153,12 +153,12 @@
                                 <exclude reference="gCb-xl-fKM"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5UW-U5-Ecw"/>
                                 <exclude reference="sxq-PX-3bs"/>
                                 <exclude reference="tXY-rX-JvD"/>
                                 <exclude reference="Kg1-Aj-G75"/>
                                 <exclude reference="s4e-Bp-8RM"/>
                                 <exclude reference="xJd-jx-g55"/>
-                                <exclude reference="5UW-U5-Ecw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -168,12 +168,12 @@
                                 <include reference="gCb-xl-fKM"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="5UW-U5-Ecw"/>
                                 <include reference="sxq-PX-3bs"/>
                                 <include reference="tXY-rX-JvD"/>
                                 <include reference="Kg1-Aj-G75"/>
                                 <include reference="s4e-Bp-8RM"/>
                                 <include reference="xJd-jx-g55"/>
-                                <include reference="5UW-U5-Ecw"/>
                             </mask>
                         </variation>
                     </view>
