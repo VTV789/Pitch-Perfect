@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RecordSoundsViewController: UIViewController {
     
     @IBOutlet weak var recordingInProgress: UILabel!
     @IBOutlet weak var stopAudio: UIButton!
     @IBOutlet weak var recordButton: UIButton!
+    
+    var audioRecorder:AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +37,25 @@ class RecordSoundsViewController: UIViewController {
         recordButton.enabled = false
         recordingInProgress.hidden = false
         stopAudio.hidden = false
+        
         // TODO: Record the user's voice
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        
+        let currentDateTime = NSDate()
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "ddMMyyyy-HHmmss"
+        let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURLWithPathComponents(pathArray)
+        print(filePath)
+        
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        
+        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+        audioRecorder.meteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
     }
     
     @IBAction func stopAudio(sender: UIButton) {
