@@ -13,14 +13,16 @@ class PlaySoundsViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer!
     var receivedAudio:RecordedAudio!
+    var audioEngine:AVAudioEngine!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Do any additonal setup after loading the view
-       
+    
         audioPlayer = try!
             AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
         audioPlayer.enableRate = true
+        audioEngine = AVAudioEngine()
     }
     
     func fastSlowAction(){
