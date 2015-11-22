@@ -76,6 +76,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as! PlaySoundsViewController
             
             let data = sender as! RecordedAudio
+            playSoundsVC.receivedAudio = data
         }
         
     }
