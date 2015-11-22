@@ -43,7 +43,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         // Record the user's voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         
-
         let recordingName = "my_audio.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = NSURL.fileURLWithPathComponents(pathArray)
@@ -60,10 +59,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
-        //TODO: Step 1 - Save the recorded audio
         recordedAudio = RecordedAudio()
-        RecordedAudio.filePathUrl
-        //TODO: Step 2 - Move to the next scene aka perform segue
+        recordedAudio.filePathUrl = recorder.url
+        recordedAudio.title = recorder.url.lastPathComponent
+    
+        //Move to the next scene aka perform segue
+        self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
     }
     
     @IBAction func stopAudio(sender: UIButton) {
