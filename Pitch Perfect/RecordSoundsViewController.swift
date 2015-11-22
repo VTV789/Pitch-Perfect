@@ -12,7 +12,7 @@ import AVFoundation
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet weak var recordingInProgress: UILabel!
-    @IBOutlet weak var stopAudio: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     
     var audioRecorder:AVAudioRecorder!
@@ -32,13 +32,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(animated: Bool) {
         recordButton.enabled = true 
         //Hide the stop button
-        stopAudio.hidden = true
+        stopButton.hidden = true
     }
     
     @IBAction func recordAudio(sender: UIButton) {
         recordButton.enabled = false
         recordingInProgress.hidden = false
-        stopAudio.hidden = false
+        stopButton.hidden = false
         
         // Record the user's voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
@@ -59,12 +59,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
-        recordedAudio = RecordedAudio()
-        recordedAudio.filePathUrl = recorder.url
-        recordedAudio.title = recorder.url.lastPathComponent
-    
-        //Move to the next scene aka perform segue
-        self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+        if (flag){
+            recordedAudio = RecordedAudio()
+            recordedAudio.filePathUrl = recorder.url
+            recordedAudio.title = recorder.url.lastPathComponent
+
+            //Move to the next scene aka perform segue
+            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+            recordButton.enabled = true
+            stopButton.hidden = true
+        }
     }
     
     @IBAction func stopAudio(sender: UIButton) {

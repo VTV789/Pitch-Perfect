@@ -88,7 +88,7 @@
                     <connections>
                         <outlet property="recordButton" destination="htU-Bn-fiA" id="4wr-Fn-euS"/>
                         <outlet property="recordingInProgress" destination="W2o-hf-Oag" id="vQg-n5-lAn"/>
-                        <outlet property="stopAudio" destination="r9b-oe-xWs" id="h0U-74-dzm"/>
+                        <outlet property="stopButton" destination="r9b-oe-xWs" id="lyX-aN-MvM"/>
                         <segue destination="Vpd-eO-nka" kind="show" identifier="stopRecording" id="Sbc-Gz-YqH"/>
                     </connections>
                 </viewController>
