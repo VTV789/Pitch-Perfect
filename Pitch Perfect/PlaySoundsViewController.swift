@@ -17,15 +17,10 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Do any additonal setup after loading the view
-        if let filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-            let filePathUrl = NSURL.fileURLWithPath(filePath)
-            audioPlayer = try!
-                AVAudioPlayer(contentsOfURL: filePathUrl)
-            audioPlayer.enableRate = true  // 1
-            
-        } else {
-            print("the filePath is empty")
-        }
+       
+        audioPlayer = try!
+            AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
+        audioPlayer.enableRate = true
     }
     
     func fastSlowAction(){
