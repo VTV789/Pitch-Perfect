@@ -55,8 +55,13 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.stop()
         audioEngine.reset()
         
-        var audioPlayerNode = AVAudioUnitTimePitch()
+        let audioPlayerNode = AVAudioUnitTimePitch()
         audioEngine.attachNode(audioPlayerNode)
+        
+        let changePitchEffect = AVAudioUnitTimePitch()
+        changePitchEffect.pitch = pitch
+        audioEngine.attachNode(changePitchEffect)
+        
     }
     
     @IBAction func StopAudio(sender: UIButton) {
