@@ -135,14 +135,6 @@
                                     <action selector="playChipmunkAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="QSp-oR-Uz1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHi-aX-Xc9">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="287" y="357" width="46" height="30"/>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUF-oL-WPW" userLabel="Slow">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
@@ -151,12 +143,22 @@
                                     <action selector="playSlowAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="GTv-jq-Xcp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHi-aX-Xc9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="Vader"/>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="DY6-hH-3XG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.45423005760000001" blue="0.14129317429999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lsC-b8-WZW" firstAttribute="top" secondItem="gCb-xl-fKM" secondAttribute="bottom" constant="81" id="5UW-U5-Ecw"/>
                             <constraint firstItem="CUF-oL-WPW" firstAttribute="top" secondItem="fba-6n-7UD" secondAttribute="bottom" constant="106" id="I9c-kz-2aR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DHi-aX-Xc9" secondAttribute="trailing" constant="47" id="T8G-bH-OOs"/>
+                            <constraint firstItem="lsC-b8-WZW" firstAttribute="top" secondItem="DHi-aX-Xc9" secondAttribute="bottom" constant="170" id="dxa-Ft-Jpo"/>
                             <constraint firstItem="lsC-b8-WZW" firstAttribute="top" secondItem="HFp-14-zDZ" secondAttribute="bottom" constant="170" id="iI3-T6-LCU"/>
                             <constraint firstItem="HFp-14-zDZ" firstAttribute="leading" secondItem="ULK-iF-kmR" secondAttribute="leadingMargin" constant="47" id="pxs-Sg-MJn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VDh-ql-qa2" secondAttribute="trailing" constant="47" id="s4e-Bp-8RM"/>
@@ -169,18 +171,20 @@
                                 <exclude reference="VDh-ql-qa2"/>
                                 <exclude reference="gCb-xl-fKM"/>
                                 <exclude reference="HFp-14-zDZ"/>
-                                <exclude reference="DHi-aX-Xc9"/>
                                 <exclude reference="CUF-oL-WPW"/>
+                                <exclude reference="DHi-aX-Xc9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5UW-U5-Ecw"/>
-                                <exclude reference="iI3-T6-LCU"/>
                                 <exclude reference="I9c-kz-2aR"/>
                                 <exclude reference="tXY-rX-JvD"/>
-                                <exclude reference="pxs-Sg-MJn"/>
                                 <exclude reference="s4e-Bp-8RM"/>
                                 <exclude reference="s6g-dx-gwn"/>
+                                <exclude reference="pxs-Sg-MJn"/>
+                                <exclude reference="T8G-bH-OOs"/>
                                 <exclude reference="xJd-jx-g55"/>
+                                <exclude reference="5UW-U5-Ecw"/>
+                                <exclude reference="dxa-Ft-Jpo"/>
+                                <exclude reference="iI3-T6-LCU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -188,18 +192,20 @@
                                 <include reference="VDh-ql-qa2"/>
                                 <include reference="gCb-xl-fKM"/>
                                 <include reference="HFp-14-zDZ"/>
-                                <include reference="DHi-aX-Xc9"/>
                                 <include reference="CUF-oL-WPW"/>
+                                <include reference="DHi-aX-Xc9"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5UW-U5-Ecw"/>
-                                <include reference="iI3-T6-LCU"/>
                                 <include reference="I9c-kz-2aR"/>
                                 <include reference="tXY-rX-JvD"/>
-                                <include reference="pxs-Sg-MJn"/>
                                 <include reference="s4e-Bp-8RM"/>
                                 <include reference="s6g-dx-gwn"/>
+                                <include reference="pxs-Sg-MJn"/>
+                                <include reference="T8G-bH-OOs"/>
                                 <include reference="xJd-jx-g55"/>
+                                <include reference="5UW-U5-Ecw"/>
+                                <include reference="dxa-Ft-Jpo"/>
+                                <include reference="iI3-T6-LCU"/>
                             </mask>
                         </variation>
                     </view>
@@ -235,5 +241,6 @@
         <image name="Slow" width="100" height="100"/>
         <image name="StopAudio " width="50" height="50"/>
         <image name="StopButton" width="50" height="50"/>
+        <image name="Vader" width="100" height="100"/>
     </resources>
 </document>
