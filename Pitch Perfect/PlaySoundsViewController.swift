@@ -13,6 +13,7 @@ class PlaySoundsViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer!
     var receivedAudio:RecordedAudio!
+    
     var audioEngine:AVAudioEngine!
     
     override func viewDidLoad() {
@@ -22,7 +23,9 @@ class PlaySoundsViewController: UIViewController {
         audioPlayer = try!
             AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
         audioPlayer.enableRate = true
+        
         audioEngine = AVAudioEngine()
+        
     }
     
     func fastSlowAction(){
@@ -44,6 +47,10 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playChipmunkAudio(sender: UIButton) {
+        playAudioWithVariablePitch(1000)
+    }
+    
+    func playAudioWithVariablePitch(pitch: Float) {
     }
     
     @IBAction func StopAudio(sender: UIButton) {

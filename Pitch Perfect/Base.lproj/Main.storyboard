@@ -131,9 +131,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="Chipmunk"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="67" y="357" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playChipmunkAudio:" destination="Vpd-eO-nka" eventType="touchUpInside" id="QSp-oR-Uz1"/>
                                 </connections>
@@ -176,14 +173,14 @@
                                 <exclude reference="CUF-oL-WPW"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="I9c-kz-2aR"/>
-                                <exclude reference="tXY-rX-JvD"/>
-                                <exclude reference="s4e-Bp-8RM"/>
-                                <exclude reference="s6g-dx-gwn"/>
-                                <exclude reference="pxs-Sg-MJn"/>
-                                <exclude reference="xJd-jx-g55"/>
                                 <exclude reference="5UW-U5-Ecw"/>
                                 <exclude reference="iI3-T6-LCU"/>
+                                <exclude reference="I9c-kz-2aR"/>
+                                <exclude reference="tXY-rX-JvD"/>
+                                <exclude reference="pxs-Sg-MJn"/>
+                                <exclude reference="s4e-Bp-8RM"/>
+                                <exclude reference="s6g-dx-gwn"/>
+                                <exclude reference="xJd-jx-g55"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -195,14 +192,14 @@
                                 <include reference="CUF-oL-WPW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="I9c-kz-2aR"/>
-                                <include reference="tXY-rX-JvD"/>
-                                <include reference="s4e-Bp-8RM"/>
-                                <include reference="s6g-dx-gwn"/>
-                                <include reference="pxs-Sg-MJn"/>
-                                <include reference="xJd-jx-g55"/>
                                 <include reference="5UW-U5-Ecw"/>
                                 <include reference="iI3-T6-LCU"/>
+                                <include reference="I9c-kz-2aR"/>
+                                <include reference="tXY-rX-JvD"/>
+                                <include reference="pxs-Sg-MJn"/>
+                                <include reference="s4e-Bp-8RM"/>
+                                <include reference="s6g-dx-gwn"/>
+                                <include reference="xJd-jx-g55"/>
                             </mask>
                         </variation>
                     </view>
