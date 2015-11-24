@@ -42,6 +42,16 @@
                                     <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EI9-dG-cZ6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFV-RO-WCE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="381" width="108" height="23"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,6 +68,7 @@
                                 <exclude reference="W2o-hf-Oag"/>
                                 <exclude reference="htU-Bn-fiA"/>
                                 <exclude reference="r9b-oe-xWs"/>
+                                <exclude reference="AFV-RO-WCE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3VH-35-vGm"/>
@@ -73,6 +84,7 @@
                                 <include reference="W2o-hf-Oag"/>
                                 <include reference="htU-Bn-fiA"/>
                                 <include reference="r9b-oe-xWs"/>
+                                <include reference="AFV-RO-WCE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="3VH-35-vGm"/>
@@ -89,6 +101,7 @@
                         <outlet property="recordButton" destination="htU-Bn-fiA" id="4wr-Fn-euS"/>
                         <outlet property="recordingInProgress" destination="W2o-hf-Oag" id="vQg-n5-lAn"/>
                         <outlet property="stopButton" destination="r9b-oe-xWs" id="lyX-aN-MvM"/>
+                        <outlet property="tapToRecord" destination="AFV-RO-WCE" id="Tg6-Sd-8Zh"/>
                         <segue destination="Vpd-eO-nka" kind="show" identifier="stopRecording" id="Sbc-Gz-YqH"/>
                     </connections>
                 </viewController>
@@ -175,16 +188,16 @@
                                 <exclude reference="DHi-aX-Xc9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="I9c-kz-2aR"/>
-                                <exclude reference="tXY-rX-JvD"/>
-                                <exclude reference="s4e-Bp-8RM"/>
-                                <exclude reference="s6g-dx-gwn"/>
-                                <exclude reference="pxs-Sg-MJn"/>
-                                <exclude reference="T8G-bH-OOs"/>
-                                <exclude reference="xJd-jx-g55"/>
                                 <exclude reference="5UW-U5-Ecw"/>
                                 <exclude reference="dxa-Ft-Jpo"/>
                                 <exclude reference="iI3-T6-LCU"/>
+                                <exclude reference="I9c-kz-2aR"/>
+                                <exclude reference="tXY-rX-JvD"/>
+                                <exclude reference="T8G-bH-OOs"/>
+                                <exclude reference="pxs-Sg-MJn"/>
+                                <exclude reference="s4e-Bp-8RM"/>
+                                <exclude reference="s6g-dx-gwn"/>
+                                <exclude reference="xJd-jx-g55"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -196,16 +209,16 @@
                                 <include reference="DHi-aX-Xc9"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="I9c-kz-2aR"/>
-                                <include reference="tXY-rX-JvD"/>
-                                <include reference="s4e-Bp-8RM"/>
-                                <include reference="s6g-dx-gwn"/>
-                                <include reference="pxs-Sg-MJn"/>
-                                <include reference="T8G-bH-OOs"/>
-                                <include reference="xJd-jx-g55"/>
                                 <include reference="5UW-U5-Ecw"/>
                                 <include reference="dxa-Ft-Jpo"/>
                                 <include reference="iI3-T6-LCU"/>
+                                <include reference="I9c-kz-2aR"/>
+                                <include reference="tXY-rX-JvD"/>
+                                <include reference="T8G-bH-OOs"/>
+                                <include reference="pxs-Sg-MJn"/>
+                                <include reference="s4e-Bp-8RM"/>
+                                <include reference="s6g-dx-gwn"/>
+                                <include reference="xJd-jx-g55"/>
                             </mask>
                         </variation>
                     </view>
