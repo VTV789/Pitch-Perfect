@@ -34,12 +34,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordButton.enabled = true 
         //Hide the stop button
         stopButton.hidden = true
-    }
+            }
     
     @IBAction func recordAudio(sender: UIButton) {
         recordButton.enabled = false
         recordingInProgress.hidden = false
         stopButton.hidden = false
+        tapToRecord.hidden = true
         
         // Record the user's voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
@@ -68,7 +69,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             //Move to the next scene aka perform segue
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
             recordButton.enabled = true
-            stopButton.hidden = true
+            tapToRecord.hidden = false
         }
     }
     
@@ -86,6 +87,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
+        tapToRecord.hidden = true
     }
     
 }
