@@ -48,9 +48,6 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="146" y="381" width="108" height="23"/>
-                                </variation>
                             </label>
                         </subviews>
                         <animations/>
@@ -62,6 +59,8 @@
                             <constraint firstItem="W2o-hf-Oag" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="KMz-HL-Ocg"/>
                             <constraint firstItem="htU-Bn-fiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKy-SR-CXQ"/>
                             <constraint firstItem="W2o-hf-Oag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4W-e2-a0K"/>
+                            <constraint firstItem="AFV-RO-WCE" firstAttribute="top" secondItem="htU-Bn-fiA" secondAttribute="bottom" constant="31" id="jh0-En-qJK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AFV-RO-WCE" secondAttribute="trailing" constant="126" id="tnw-y3-zKb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -71,12 +70,14 @@
                                 <exclude reference="AFV-RO-WCE"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3VH-35-vGm"/>
                                 <exclude reference="HV4-8y-vaa"/>
                                 <exclude reference="gKy-SR-CXQ"/>
-                                <exclude reference="JKf-Oe-nxW"/>
+                                <exclude reference="jh0-En-qJK"/>
+                                <exclude reference="tnw-y3-zKb"/>
                                 <exclude reference="KMz-HL-Ocg"/>
                                 <exclude reference="h4W-e2-a0K"/>
+                                <exclude reference="JKf-Oe-nxW"/>
+                                <exclude reference="3VH-35-vGm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -87,12 +88,14 @@
                                 <include reference="AFV-RO-WCE"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3VH-35-vGm"/>
                                 <include reference="HV4-8y-vaa"/>
                                 <include reference="gKy-SR-CXQ"/>
-                                <include reference="JKf-Oe-nxW"/>
+                                <include reference="jh0-En-qJK"/>
+                                <include reference="tnw-y3-zKb"/>
                                 <include reference="KMz-HL-Ocg"/>
                                 <include reference="h4W-e2-a0K"/>
+                                <include reference="JKf-Oe-nxW"/>
+                                <include reference="3VH-35-vGm"/>
                             </mask>
                         </variation>
                     </view>
