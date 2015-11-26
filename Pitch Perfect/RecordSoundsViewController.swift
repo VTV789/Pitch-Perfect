@@ -34,7 +34,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordButton.enabled = true 
         //Hide the stop button
         stopButton.hidden = true
-            }
+    }
     
     @IBAction func recordAudio(sender: UIButton) {
         recordButton.enabled = false
@@ -71,7 +71,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             recordButton.enabled = true
             tapToRecord.hidden = false
         }
-    }
+    }  
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "stopRecording"){
@@ -79,7 +79,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             let data = sender as! RecordedAudio
             playSoundsVC.receivedAudio = data
         }
-        
     }
     
     @IBAction func stopAudio(sender: UIButton) {
@@ -89,6 +88,5 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         try! audioSession.setActive(false)
         tapToRecord.hidden = true
     }
-    
 }
 
