@@ -70,14 +70,14 @@
                                 <exclude reference="AFV-RO-WCE"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="3VH-35-vGm"/>
                                 <exclude reference="HV4-8y-vaa"/>
                                 <exclude reference="gKy-SR-CXQ"/>
+                                <exclude reference="JKf-Oe-nxW"/>
                                 <exclude reference="jh0-En-qJK"/>
                                 <exclude reference="tnw-y3-zKb"/>
                                 <exclude reference="KMz-HL-Ocg"/>
                                 <exclude reference="h4W-e2-a0K"/>
-                                <exclude reference="JKf-Oe-nxW"/>
-                                <exclude reference="3VH-35-vGm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -88,14 +88,14 @@
                                 <include reference="AFV-RO-WCE"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="3VH-35-vGm"/>
                                 <include reference="HV4-8y-vaa"/>
                                 <include reference="gKy-SR-CXQ"/>
+                                <include reference="JKf-Oe-nxW"/>
                                 <include reference="jh0-En-qJK"/>
                                 <include reference="tnw-y3-zKb"/>
                                 <include reference="KMz-HL-Ocg"/>
                                 <include reference="h4W-e2-a0K"/>
-                                <include reference="JKf-Oe-nxW"/>
-                                <include reference="3VH-35-vGm"/>
                             </mask>
                         </variation>
                     </view>
