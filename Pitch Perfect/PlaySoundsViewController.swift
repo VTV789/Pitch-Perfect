@@ -31,6 +31,8 @@ class PlaySoundsViewController: UIViewController {
     
     func fastSlowAction(){
         audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
@@ -73,7 +75,6 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func playDarthvaderAudio(sender: UIButton) {
         playAudioWithVariablePitch(-1000)
-
     }
     
     @IBAction func StopAudio(sender: UIButton) {
