@@ -80,8 +80,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func StopAudio(sender: UIButton) {
-        audioPlayer.stop()
-        audioEngine.stop()
+        audioPlayerEngine()
     }
     
     override func didReceiveMemoryWarning() {
