@@ -29,10 +29,14 @@ class PlaySoundsViewController: UIViewController {
         audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
     }
     
-    func fastSlowAction(){
+    func audioPlayerEngine(){
         audioPlayer.stop()
-        audioEngine.stop()
         audioEngine.reset()
+        audioEngine.stop()
+    }
+    
+    func fastSlowAction(){
+        audioPlayerEngine()
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
@@ -54,9 +58,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func playAudioWithVariablePitch(pitch: Float){
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
+        audioPlayerEngine()
         
         let audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
@@ -79,6 +81,7 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func StopAudio(sender: UIButton) {
         audioPlayer.stop()
+        audioEngine.stop()
     }
     
     override func didReceiveMemoryWarning() {
