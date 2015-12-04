@@ -29,7 +29,7 @@ class PlaySoundsViewController: UIViewController {
         audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
     }
     
-    func audioPlayerEngine(){
+    func stopAllAudio(){
         audioPlayer.stop()
         audioEngine.reset()
     }
@@ -57,7 +57,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func playAudioWithVariablePitch(pitch: Float){
-        audioPlayerEngine()
+        stopAllAudio()
         audioEngine.stop()
         
         let audioPlayerNode = AVAudioPlayerNode()
@@ -80,7 +80,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func StopAudio(sender: UIButton) {
-        audioPlayerEngine()
+        stopAllAudio()
         audioEngine.stop()
     }
     
