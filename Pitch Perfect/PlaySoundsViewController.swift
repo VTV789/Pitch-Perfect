@@ -35,7 +35,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func fastSlowAction(){
-        audioPlayer.stop()
+        stopAllAudio()
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
